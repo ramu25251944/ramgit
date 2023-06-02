@@ -1,0 +1,60 @@
+OOPS CONCEPT:
+
+Object-oriented programing(oop) is a program that is based on the concept of objects.
+
+THE MAIN OOPS CONCEPTS:
+1.ABSTRACTION
+2.ENCAPSLATION
+3.POLYMORPHISM
+4.INHERITENCE
+5.INTERFACE
+
+1.ABSTRACTION:
+
+Abstraction is the process of hiding implementation details from the user and only exposing relevant information.
+
+A.Abstract Class:
+
+An abstraction class is a class that cannot be instantiatd directly, but can be extended by other classes.
+Abstraction classes can have both abstract and non-abstract methods.Abstract classes are declared using the
+"abstract" keyword.
+
+B.Abstract Method:
+
+Abstract methods can only be declared in abstract classes and interfaces. An abstract class can have both 
+abstract and non-abstract methods, where as an interface can only have abstract methods.
+When a subclass extends an abstract class or implements an interface method, subclass must provide an 
+implementation for those method.
+if the subclass does not provide an implementation for the abstract method,it must also be declared as abstract.
+private static and final cannot be applied to abstract,
+Reason we need to provide implementation for abstract methods in subclasses.
+
+2.ENCAPSLATION:
+
+Encapslation is hiding the data behind the methods ex.pojo classes
+Encapsulation provides several benefits in javav programming,including:
+--->improved security
+--->improved maintainbility
+--->code reuse
+
+improved security:
+By hiding the internal details of the object, encapsulation prevents unauthorized access and manipulation of the data,
+improving the overall security of the system.
+
+improved maintainbility:
+Encapsulation makes it easier to modify the internal implementation details of the without affecting the rest of the system,
+improving the maintainability.
+
+code reuse:
+Encapsulation allows for code reuse, as objects can be used in different contexts without requiring modification to the 
+underlying implementation details.
+
+3.INHERITENCE:
+
+inheritence accquire parent classes feautures.
+
+1.single level(A extends B) one level
+2.multi level(A extends B extends C) more than one level
+3.Hierachical level(A--B extends A, C extends A) one parent having multiple childs
+4.Hybrid: it combination of hierachical and multiple inheritence---interface
+5.Multiple: One child having more than one parent---interface

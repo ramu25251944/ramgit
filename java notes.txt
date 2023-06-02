@@ -1,0 +1,41 @@
+VARIABLE:
+In java variable is nothing but a container which holds the value and assign the data type is called java variable.
+syntax:
+type variablename = value;
+
+Variables are divided into three types.
+1.local variables------>  local variables are the variables.it can be created with in the main method is called as local variables.
+2.instance variables--> instance variables are the  variables.it can be created in the class level.To access these variables to create an object.This is called as instance variables.
+3.static variables--> static variables are also called as class level variables by using static keyword. To access these variables no need to create an object is called as static variables.
+
+DATATYPE:
+In java datatypes is a different sizes and values that can be stored in the variable is called as datatypes.
+Thery are divided into the two types of variables
+1.premitive datatype
+2.non-premitive datatype
+
+premitive datatype: it specifies data types are byte,short,int,long,float,double,char,boolean.
+non-premitive datatype: it specifies data types are string,arrays,classes,interfaces.
+
+byte--->  1byte 
+short-->  2bytes
+int---->  4bytes
+long--->  8bytes
+float-->  4bytes
+double->  8bytes
+char--->  2bytes
+boolean-> 1bit
+
+Here 1-byte is a 8 bits
+
+TYPE-CASTING:
+In java type casting is when you assign a value of one premitive datatype to another premitive datatype.They are divided into two ways
+1.Widening casting--->  it is done automatically when passing a smaller size type to larger size type. double num = int
+2.Narrowing casting---> it is must be done manually by placing the type in front of value. ex :  int num = (int) double
+
+IDENTIFIERS:
+In java variables must be identified with unique names. These unique names are called identifiers.
+identifers are class names and variable names and method names.
+
+
+

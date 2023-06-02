@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"> 
+   <!--  <bean id="de" class="com.ram.Devoloper1"></bean>
+    <bean id="tm" class="com.ram.TeamLead3">
+    <property name="dev" ref="de"></property>
+    </bean>
+    <bean id="me" class="com.ram.Manager1">
+    <property name="tl" ref="tm"></property>
+    </bean> -->
+    
+  <!-- <bean id="dev" class="com.emp.Department">
+    <property name="did" value="101"></property>
+     <property name="dname" value="IT"></property>
+      <property name="ddesg" value="SOFTWARE ENGINEER"></property>
+     </bean>
+    
+    <bean id="emp" class="com.emp.Employee">
+    <property name="eid" value="1"></property>
+    <property name="ename" value="ram"></property>
+    <property name="esal" value="56.3"></property>
+    <property name="dep" ref="dev"></property>
+    </bean>  -->
+   <!--  <bean id="emp" class="com.emp.Employee">
+    <property name="eid" value="1"></property>
+    <property name="ename" value="ram"></property>
+    <property name="esal" value="56.3"></property>
+    </bean>
+    <bean id="empone" class="com.emp.Employee">
+    <property name="eid" value="2"></property>
+    <property name="ename" value="ramu"></property>
+    <property name="esal" value="86.3"></property>
+    </bean> -->
+   <!--  <bean id="std" class="com.realations.Student">
+    <property name="sid" value="1"></property>
+    <property name="sname" value="ram"></property>
+    <property name="sub">
+    <list>
+     <value>telugu</value>
+     <value>hindi</value>
+     <value>english</value>
+     <value>maths</value>
+     <value>science</value>
+     <value>social</value>
+     <value>social</value>
+    </list>
+    </property>
+    <property name="marks">
+    <set>
+    <value>72.3</value>
+    <value>89.3</value>
+    <value>65.3</value>
+    <value>78.2</value>
+    <value>89.5</value>
+    <value>82.3</value>
+    <value>90.3</value>
+    </set>
+    </property>
+    <property name="submarks">
+    <map>
+    <entry key="telugu" value="78.3"></entry>
+        <entry key="hindi" value="98.3"></entry>
+            <entry key="english" value="87.3"></entry>
+                <entry key="maths" value="78.3"></entry>
+                    <entry key="science" value="98.3"></entry>
+                        <entry key="social" value="86.3"></entry>
+                        <entry key="social" value="89.3"></entry>
+    </map>
+    </property>
+    </bean> -->
+  <bean id="de" name="com.rel.Dept">
+  <property name="did" value="5"></property>
+  <property name="dname" value="IT"></property>
+  <property name="ddesg" value="software"></property>  
+  </bean>
+  <bean id="de1" name="com.rel.Dept">
+  <property name="did" value="6"></property>
+  <property name="dname" value="IT"></property>
+  <property name="ddesg" value="hardware"></property>  
+  </bean>
+  <bean id="de2" name="com.rel.Dept">
+  <property name="did" value="7"></property>
+  <property name="dname" value="IT"></property>
+  <property name="ddesg" value="analyst"></property>  
+  </bean> 
+    
+ <bean id="emp" name="com.rel.Employee"> 
+ <property name="eid" value="1"></property>
+ <property name="ename" value="krishna"></property>
+ <property name="esal" value="45.3"></property>
+ <property name="dep">
+ <list>
+  <ref bean = "de"/>
+  <ref bean = "de1"/>
+  <ref bean = "de2"/>
+  </list>
+ </property>
+  <property name="deps">
+  <set>
+   <ref bean = "de"/>
+  <ref bean = "de1"/>
+  <ref bean = "de2"/>
+  </set>
+  </property>
+ <property name="depm">
+ <map>
+ <entry key-ref="de" value="7"></entry>
+  <entry key-ref="de1" value="8"></entry>
+   <entry key-ref="de2" value="9"></entry>
+ </map>
+ </property>
+ </bean>
+ </beans>
